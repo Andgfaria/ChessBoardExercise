@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6532C9CF223ABBD5001F22D1 /* StackViewsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C9CE223ABBD5001F22D1 /* StackViewsResolver.swift */; };
+		6532C9D1223ABDCA001F22D1 /* StackViewSetupResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C9D0223ABDCA001F22D1 /* StackViewSetupResolver.swift */; };
+		6532C9D3223ABE27001F22D1 /* Composer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6532C9D2223ABE27001F22D1 /* Composer.swift */; };
 		6591F14B223947CD00754402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F14A223947CD00754402 /* AppDelegate.swift */; };
 		6591F14D223947CD00754402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F14C223947CD00754402 /* ViewController.swift */; };
 		6591F150223947CD00754402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F14E223947CD00754402 /* Main.storyboard */; };
@@ -14,8 +17,6 @@
 		6591F155223947CE00754402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F153223947CE00754402 /* LaunchScreen.storyboard */; };
 		6591F160223947CE00754402 /* ChessBoardExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F15F223947CE00754402 /* ChessBoardExerciseTests.swift */; };
 		6591F16B223947FF00754402 /* TappableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F16A223947FF00754402 /* TappableView.swift */; };
-		6591F16E2239687B00754402 /* BoardSizeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F16D2239687B00754402 /* BoardSizeConverter.swift */; };
-		6591F17022396A3300754402 /* SquareColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F16F22396A3300754402 /* SquareColorConverter.swift */; };
 		6591F1732239756300754402 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F1722239756300754402 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6532C9CE223ABBD5001F22D1 /* StackViewsResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewsResolver.swift; sourceTree = "<group>"; };
+		6532C9D0223ABDCA001F22D1 /* StackViewSetupResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewSetupResolver.swift; sourceTree = "<group>"; };
+		6532C9D2223ABE27001F22D1 /* Composer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composer.swift; sourceTree = "<group>"; };
 		6591F147223947CD00754402 /* ChessBoardExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessBoardExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6591F14A223947CD00754402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6591F14C223947CD00754402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +45,6 @@
 		6591F15F223947CE00754402 /* ChessBoardExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBoardExerciseTests.swift; sourceTree = "<group>"; };
 		6591F161223947CE00754402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6591F16A223947FF00754402 /* TappableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableView.swift; sourceTree = "<group>"; };
-		6591F16D2239687B00754402 /* BoardSizeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardSizeConverter.swift; sourceTree = "<group>"; };
-		6591F16F22396A3300754402 /* SquareColorConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareColorConverter.swift; sourceTree = "<group>"; };
 		6591F1722239756300754402 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,8 +87,9 @@
 		6591F149223947CD00754402 /* ChessBoardExercise */ = {
 			isa = PBXGroup;
 			children = (
+				6532C9D2223ABE27001F22D1 /* Composer.swift */,
 				6591F1712239755500754402 /* Utils */,
-				6591F16C223966A700754402 /* Converters */,
+				6591F16C223966A700754402 /* Resolvers */,
 				6591F14A223947CD00754402 /* AppDelegate.swift */,
 				6591F14C223947CD00754402 /* ViewController.swift */,
 				6591F14E223947CD00754402 /* Main.storyboard */,
@@ -107,13 +110,13 @@
 			path = ChessBoardExerciseTests;
 			sourceTree = "<group>";
 		};
-		6591F16C223966A700754402 /* Converters */ = {
+		6591F16C223966A700754402 /* Resolvers */ = {
 			isa = PBXGroup;
 			children = (
-				6591F16D2239687B00754402 /* BoardSizeConverter.swift */,
-				6591F16F22396A3300754402 /* SquareColorConverter.swift */,
+				6532C9CE223ABBD5001F22D1 /* StackViewsResolver.swift */,
+				6532C9D0223ABDCA001F22D1 /* StackViewSetupResolver.swift */,
 			);
-			path = Converters;
+			path = Resolvers;
 			sourceTree = "<group>";
 		};
 		6591F1712239755500754402 /* Utils */ = {
@@ -226,11 +229,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6591F14D223947CD00754402 /* ViewController.swift in Sources */,
+				6532C9D1223ABDCA001F22D1 /* StackViewSetupResolver.swift in Sources */,
 				6591F14B223947CD00754402 /* AppDelegate.swift in Sources */,
-				6591F17022396A3300754402 /* SquareColorConverter.swift in Sources */,
-				6591F16E2239687B00754402 /* BoardSizeConverter.swift in Sources */,
 				6591F16B223947FF00754402 /* TappableView.swift in Sources */,
+				6532C9D3223ABE27001F22D1 /* Composer.swift in Sources */,
 				6591F1732239756300754402 /* Operators.swift in Sources */,
+				6532C9CF223ABBD5001F22D1 /* StackViewsResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
