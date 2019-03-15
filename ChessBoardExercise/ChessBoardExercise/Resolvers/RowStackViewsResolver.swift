@@ -1,5 +1,5 @@
 //
-//  StackViewsResolver.swift
+//  RowStackViewsResolver.swift
 //  ChessBoardExercise
 //
 //  Created by André Gimenez Faria on 14/03/19.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-struct StackViewResolvers {
+struct RowStackViewResolvers {
     
-    static func stackViews(boardSize: Int) -> [UIStackView] {
-        return Array(1...boardSize).map { _ in UIStackView() }
+    static func stackViews(rowLength: Int) -> [UIStackView] {
+        return Array(1...rowLength).map { _ in UIStackView() }
     }
     
     private init() { }
