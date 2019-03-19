@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct RowStackViewResolvers {
+struct RowStackViewResolver {
     
     static func stackViews(rowLength: Int) -> [UIStackView] {
         return Array(1...rowLength).map { _ in UIStackView() }

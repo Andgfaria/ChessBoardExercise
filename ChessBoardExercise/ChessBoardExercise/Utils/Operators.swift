@@ -12,17 +12,17 @@ precedencegroup ApplyPrecedence {
     associativity: left
 }
 
-infix operator |>: ApplyPrecedence
+infix operator +>: ApplyPrecedence
 
-func |><T: AnyObject>(lhs: [T], rhs: (T) -> Void) -> [T] {
+func +><T: AnyObject>(lhs: [T], rhs: (T) -> Void) -> [T] {
     lhs.forEach(rhs)
     return lhs
 }
 
 
-infix operator |-: ApplyPrecedence
+infix operator >=>: ApplyPrecedence
 
-func |-<T: AnyObject>(lhs: [T], rhs: ([T]) -> Void) -> [T] {
+func >=><T: AnyObject>(lhs: [T], rhs: ([T]) -> Void) -> [T] {
     rhs(lhs)
     return lhs
 }

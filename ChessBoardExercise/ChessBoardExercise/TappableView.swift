@@ -10,7 +10,7 @@ import UIKit
 
 class TappableView: UIView {
     
-    var tapHandler: ((TappableView) -> Void)?
+    var tapHandler: (() -> Void)?
     
     init() {
         super.init(frame: .zero)
@@ -32,7 +32,7 @@ class TappableView: UIView {
 extension TappableView {
     
     @objc private func handleTap() {
-        tapHandler?(self)
+        tapHandler?()
     }
     
     private func setupTapGesture() {
