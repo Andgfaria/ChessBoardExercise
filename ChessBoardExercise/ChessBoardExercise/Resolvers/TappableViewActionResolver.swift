@@ -10,13 +10,11 @@ import Foundation
 
 struct TappableViewActionResolve {
     
-    func addAction(to tappableViews: [TappableView]) {
-        tappableViews.forEach { view in
-            weak var weakView = view
-            view.tapHandler = {
-                guard let targetView = weakView else { return }
-                ViewTapChangeResolver.change(targetView)
-            }
+    func addAction(to tappableView: TappableView) {
+        weak var view = tappableView
+        tappableView.tapHandler = {
+            guard let view = view else { return }
+            ViewTapChangeResolver.change(view)
         }
     }
     
