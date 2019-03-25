@@ -11,7 +11,8 @@ import UIKit
 struct Composer {
     
     func setupBoard(sized size: Int, with view: UIView) {
-        
+        let v = Array(1...size) |= { _ in TappableViewsComposer.tappableViews(rowSize: size) }
+        let s = v |= UIStackView.init
     }
     
     private init() { }

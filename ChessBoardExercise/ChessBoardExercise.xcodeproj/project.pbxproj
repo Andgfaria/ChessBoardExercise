@@ -17,6 +17,7 @@
 		654821CB223B2B3B00381C5F /* VerticalStackViewSetupResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654821CA223B2B3B00381C5F /* VerticalStackViewSetupResolver.swift */; };
 		654821CD224070EA00381C5F /* TappableViewActionResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654821CC224070EA00381C5F /* TappableViewActionResolver.swift */; };
 		6586E7E422495B330014BAB5 /* TappableViewsComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6586E7E322495B330014BAB5 /* TappableViewsComposer.swift */; };
+		6586E7E6224968FA0014BAB5 /* RowsComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6586E7E5224968FA0014BAB5 /* RowsComposer.swift */; };
 		6591F14B223947CD00754402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F14A223947CD00754402 /* AppDelegate.swift */; };
 		6591F14D223947CD00754402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6591F14C223947CD00754402 /* ViewController.swift */; };
 		6591F150223947CD00754402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6591F14E223947CD00754402 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		654821CA223B2B3B00381C5F /* VerticalStackViewSetupResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackViewSetupResolver.swift; sourceTree = "<group>"; };
 		654821CC224070EA00381C5F /* TappableViewActionResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableViewActionResolver.swift; sourceTree = "<group>"; };
 		6586E7E322495B330014BAB5 /* TappableViewsComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableViewsComposer.swift; sourceTree = "<group>"; };
+		6586E7E5224968FA0014BAB5 /* RowsComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowsComposer.swift; sourceTree = "<group>"; };
 		6591F147223947CD00754402 /* ChessBoardExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessBoardExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6591F14A223947CD00754402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6591F14C223947CD00754402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				6532C9D2223ABE27001F22D1 /* Composer.swift */,
 				6586E7E322495B330014BAB5 /* TappableViewsComposer.swift */,
+				6586E7E5224968FA0014BAB5 /* RowsComposer.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				654821CB223B2B3B00381C5F /* VerticalStackViewSetupResolver.swift in Sources */,
 				6591F14D223947CD00754402 /* ViewController.swift in Sources */,
 				654821C9223B29DD00381C5F /* ViewTapChangeResolver.swift in Sources */,
+				6586E7E6224968FA0014BAB5 /* RowsComposer.swift in Sources */,
 				654821C3223B249700381C5F /* RowColorResolver.swift in Sources */,
 				6532C9D1223ABDCA001F22D1 /* StackViewSetupResolver.swift in Sources */,
 				654821C7223B27F100381C5F /* TappableViewsRowResolver.swift in Sources */,
