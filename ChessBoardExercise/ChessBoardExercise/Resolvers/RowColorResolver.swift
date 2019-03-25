@@ -10,7 +10,7 @@ import UIKit
 
 struct RowColorResolver {
     
-    static func applyColor(to views: [UIView]) {
+    static func applyColor(to views: [TappableView]) {
         for i in 0..<views.count {
             views[i].backgroundColor = i % 2 == 0 ? .black : .white
         }

@@ -11,8 +11,7 @@ import UIKit
 struct Composer {
     
     func setupBoard(sized size: Int, with view: UIView) {
-        RowStackViewResolver.stackViews(rowLength: size) +>
-        StackViewSetupResolver.setup
+        
     }
     
     private init() { }

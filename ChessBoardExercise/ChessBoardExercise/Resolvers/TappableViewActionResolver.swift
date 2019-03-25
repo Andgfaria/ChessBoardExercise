@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct TappableViewActionResolve {
+struct TappableViewActionResolver {
     
-    func addAction(to tappableView: TappableView) {
+    static func addAction(to tappableView: TappableView) {
         weak var view = tappableView
         tappableView.tapHandler = {
             guard let view = view else { return }
