@@ -18,16 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ral-jc-1wm">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ral-jc-1wm" secondAttribute="height" multiplier="1:1" id="O30-gA-LaP"/>
+                                    <constraint firstAttribute="width" constant="375" id="Qov-NL-CLA"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.17569181117972865" green="0.16516876186886825" blue="0.35577234455958551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ral-jc-1wm" secondAttribute="trailing" id="gxs-KJ-u5s"/>
-                            <constraint firstItem="Ral-jc-1wm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jqJ-lG-977"/>
-                            <constraint firstItem="Ral-jc-1wm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="liR-tJ-5fe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ral-jc-1wm" secondAttribute="bottom" id="taq-8a-tab"/>
+                            <constraint firstItem="Ral-jc-1wm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="58g-Xi-Oe4"/>
+                            <constraint firstItem="Ral-jc-1wm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XnG-Sx-wsI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
