@@ -16,8 +16,6 @@ struct ViewTapChangeResolver {
             view.backgroundColor = .lightGray
         } else if currentBackgroundColor == .black {
             view.backgroundColor = .darkGray
-        } else {
-            view.backgroundColor = .red
         }
     }
     
