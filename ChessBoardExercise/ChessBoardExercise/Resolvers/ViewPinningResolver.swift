@@ -12,6 +12,8 @@ struct ViewPinningResolver {
     
     static func pinner(to parentView: UIView) -> (UIView) -> Void {
         return { view in
+            view.translatesAutoresizingMaskIntoConstraints = false
+            parentView.addSubview(view)
             NSLayoutConstraint.activate([
                 view.leadingAnchor.constraint(equalTo: parentView.leadingAnchor),
                 view.trailingAnchor.constraint(equalTo: parentView.trailingAnchor),

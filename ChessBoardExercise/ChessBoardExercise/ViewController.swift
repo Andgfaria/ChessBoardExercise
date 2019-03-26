@@ -9,9 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak private var containerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        MainComposer.setupBoard(sized: 6, with: containerView)
     }
 
 }

@@ -33,7 +33,7 @@ func |=<A,B>(lhs: [A], rhs: (A) -> B) -> [B] {
     return lhs.map(rhs)
 }
 
-infix operator ->-
+infix operator ->-: ApplyPrecedence
 
 func ->-<A,B,C>(lhs: @escaping (A) -> B, rhs: @escaping (B) -> C) -> (A) -> C {
     return { value in rhs(lhs(value)) }
