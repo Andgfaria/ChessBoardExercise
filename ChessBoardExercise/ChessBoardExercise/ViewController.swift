@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        MainComposer.setupBoard(sized: 6, with: containerView)
+        MainComposer.setupBoard(sized: 24, with: containerView)
     }
 
 }
