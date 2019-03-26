@@ -10,10 +10,11 @@ import Foundation
 
 struct TappableViewsComposer {
     
-    static func tappableViews(rowSize: Int) -> [TappableView] {
-        return [TappableView](repeating: TappableView(), count: rowSize) >=>
-               RowColorResolver.applyColor +>
-               TappableViewActionResolver.addAction
+    static func tappableRows(rowSize: Int) -> [[TappableView]] {
+        let views = [TappableView](repeating: TappableView(), count: rowSize * rowSize) >=>
+                    RowColorResolver.applyColor +>
+                    TappableViewActionResolver.addAction
+        return SquarefyComposer.squarify(views, placeholder: TappableView())
     }
     
     private init() { }
