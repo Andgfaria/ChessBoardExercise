@@ -10,11 +10,13 @@ import UIKit
 
 struct MainComposer {
     
-    static func setupBoard(sized size: Int, with view: UIView) {
-        let verticalStackView = (TappableViewsComposer.tappableRows ->-
-                                 RowsComposer.rows ->-
-                                 VerticalStackComposer.verticalStackView)(size)
-        ViewPinningResolver.pinner(to: view)(verticalStackView)
+    static func setupBoard(sized size: Int) -> (UIView) -> Void {
+        return { parentView in
+            let verticalStackView = (TappableViewsComposer.tappableRows ->-
+                RowsComposer.rows ->-
+                VerticalStackComposer.verticalStackView)(size)
+            ViewPinningResolver.pinner(to: parentView)(verticalStackView)
+        }
     }
     
     private init() { }
